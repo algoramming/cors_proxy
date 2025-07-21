@@ -54,7 +54,6 @@ const proxyHandler = async (req, res) => {
     // Prepare headers
     const headers = {
       ...req.headers,
-      host: new URL(targetUrl).host,
     };
 
     // Remove unnecessary headers
